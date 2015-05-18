@@ -15,7 +15,7 @@ var greetingArray = [
     ["Helo ", "Hwyl fawr ", "Welsh"],
     ["Sawubona ", "Hamba kahle ", "Zulu"]
 ];
-var i = 0
+var i = 0;
 
 myApp.controller('WelcomeController',["$scope", function($scope){
     $scope.heading = "Message: ";
