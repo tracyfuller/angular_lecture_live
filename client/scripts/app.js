@@ -13,7 +13,7 @@ var greetingArray = [
     ["Habari ", "kuaga ", "Swahili"],
     ["Hej ", "adjö ", "Swedish"],
     ["Helo ", "Hwyl fawr ", "Welsh"],
-    ["Sawubona ", "Hamba kahle", "Zulu"]
+    ["Sawubona ", "Hamba kahle ", "Zulu"]
 ];
 var i = 0
 
@@ -31,8 +31,6 @@ myApp.controller('WelcomeController',["$scope", function($scope){
 
     $scope.updateMessage = function(){
         $scope.message = greetingArray[i][0] + $scope.name + "!";
-        console.log("Greeting array: ", greetingArray[i][0]);
-
     };
 
     $scope.goodByeMessage = function(){

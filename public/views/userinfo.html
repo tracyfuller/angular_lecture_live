@@ -2,11 +2,13 @@
     <div class="col-md-offset-2">
         <div>
             <h1>{{heading + message}}</h1>
-            <h2>{{language}}</h2>
+            <p>{{language}}</p>
             <input ng-model="name" type="text" placeholder="Enter your name here">
         </div>
-        <button ng-click="changeLanguage()" class="btn btn-warning">Change Language</button>
-        <button ng-click="updateMessage()"  class="btn btn-info">Hello</button>
-        <button ng-click="goodByeMessage()"  class="btn btn-info">Goodbye</button>
+        <div id="buttons">
+            <button ng-click="updateMessage()"  class="btn btn-info">Hello</button>
+            <button ng-click="goodByeMessage()"  class="btn btn-info">Goodbye</button>
+            <button ng-click="changeLanguage()" class="btn btn-warning">Change Language</button>
+        </div>
     </div>
 </div>
