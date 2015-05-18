@@ -52,6 +52,14 @@ module.exports = function(grunt) {
                     "views/userinfo.html"
                 ],
                 "dest": "public/"
+            },
+            javascripts: {
+                expand: true,
+                cwd: "client/scripts",
+                src: [
+                    "greetings.js"
+                ],
+                "dest": "public/javascripts"
             }
         }
     });
