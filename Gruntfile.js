@@ -8,7 +8,7 @@ module.exports = function(grunt) {
             },
             build: {
                 src: 'client/scripts/app.js',
-                dest: 'public/javascripts/app.min.js'
+                dest: 'server/public/javascripts/app.min.js'
             }
         },
         copy: {
@@ -20,7 +20,7 @@ module.exports = function(grunt) {
                     "angular/angular.min.js.map",
                     "angular/angular-csp.css"
                 ],
-                "dest": "public/vendor/"
+                "dest": "server/public/vendor/"
             },
             bootstrap: {
                 expand: true,
@@ -35,7 +35,7 @@ module.exports = function(grunt) {
                     "bootstrap/dist/fonts/glyphicons-halflings-regular.woff2",
                     "bootstrap/dist/js/bootstrap.min.js"
                 ],
-                "dest": "public/vendor/"
+                "dest": "server/public/vendor/"
             },
             styles: {
                 expand: true,
@@ -43,7 +43,7 @@ module.exports = function(grunt) {
                 src: [
                     "stylesheets/style.css"
                 ],
-                "dest": "public/"
+                "dest": "server/public/"
             },
             views: {
                 expand: true,
@@ -51,7 +51,7 @@ module.exports = function(grunt) {
                 src: [
                     "views/userinfo.html"
                 ],
-                "dest": "public/"
+                "dest": "server/public/"
             },
             javascripts: {
                 expand: true,
@@ -59,7 +59,7 @@ module.exports = function(grunt) {
                 src: [
                     "greetings.js"
                 ],
-                "dest": "public/javascripts"
+                "dest": "server/public/javascripts"
             }
         }
     });

@@ -23,4 +23,5 @@ angular.module('myApp', [])
     };
 });
 
+console.log("This is grunted");
 
