@@ -1,5 +1,6 @@
-angular.module('myApp', []).controller('greetingArray', function($scope) {
-    $scope.greetings = [
+angular.module('myApp', [])
+    .service('greetingArray', function() {
+    greetings = [
         {hello: "Hello ", goodbye: "Goodbye ", language: "English"},
         {hello: "Bonjour ", goodbye: "Adieu ", language: "French"},
         {hello: "Hola ", goodbye: "Adiós ", language: "Spanish"},
@@ -14,6 +15,12 @@ angular.module('myApp', []).controller('greetingArray', function($scope) {
         {hello: "Helo ", goodbye: "Hwyl fawr ", language: "Welsh"},
         {hello: "Sawubona ", goodbye: "Hamba kahle ", language: "Zulu"}
     ];
+
+    return {
+        getProperty: function () {
+            return greetings;
+        }
+    };
 });
 
 //var greetingArray = [
@@ -32,5 +39,5 @@ angular.module('myApp', []).controller('greetingArray', function($scope) {
 //    ["Sawubona ", "Hamba kahle ", "Zulu"]
 //];
 
-module.exports = greetingArray;
+//module.exports = greetingArray;
 
