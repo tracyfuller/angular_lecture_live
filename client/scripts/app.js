@@ -30,10 +30,18 @@ myApp.controller('WelcomeController',["$scope", function($scope){
     }
 
     $scope.updateMessage = function(){
-        $scope.message = greetingArray[i][0] + $scope.name + "!";
+        if (!$scope.name){
+            alert("Please enter your name");
+        } else {
+            $scope.message = greetingArray[i][0] + $scope.name + "!";
+        }
     };
 
     $scope.goodByeMessage = function(){
-        $scope.message = greetingArray[i][1] + $scope.name + " :(";
+        if (!$scope.name){
+            alert("Please enter your name");
+        } else {
+            $scope.message = greetingArray[i][1] + $scope.name + " :(";
+        }
     };
 }]);
